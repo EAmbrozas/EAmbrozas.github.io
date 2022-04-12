@@ -1,0 +1,131 @@
+.header__before, .header__after {
+    height: 100vh;
+    overflow: hidden;
+} 
+
+.header__before {
+    background: url(../../assets/header__background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header__after {
+    background-color: rgba(0, 0, 0, 0.800);
+}
+
+header {
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.header__container {
+    text-align: center;
+    height: auto;
+    position: relative;
+}
+
+/* ================= CTA ================= */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    
+}
+
+.cta__icon {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* ================= HEADER SOCIALS ================= */
+.header__socials {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    bottom: 3rem;
+    padding: 10rem;
+    justify-content: center;
+}
+
+.header__socials::before {
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background: var(--color-primary);
+}
+.header__socials::after {
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+
+/* ================= HEADER LOGO ================= */
+.logo {
+    margin-top: 15%;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.logo img {
+    width: 9rem;
+    margin: auto;
+
+}
+
+/* ================= MEDIA QUERIES (MEDIUM SIZED DEVICES) =================== */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__after {
+        background-color: rgba(0, 0, 0, 0.750);
+    }
+
+    .logo {
+        margin-top: 35%;
+        
+    }
+
+    .logo img {
+        width: 7rem;
+    
+    }
+
+    .cta {
+        margin-top: 2.5rem;
+    }
+
+    .header__socials {
+        padding: 6rem;  
+    }
+
+    
+}
+/* ================= MEDIA QUERIES (SMALL SIZED DEVICES) =================== */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__after {
+        background-color: rgba(0, 0, 0, 0.700);
+    }
+
+    .logo {
+        margin-top: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .logo img {
+        width: 5rem;
+    }
+
+ 
+}

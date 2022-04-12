@@ -1,0 +1,132 @@
+.about__before {
+    background-color: var(--color-bg);
+    width: 100%;
+    height: auto;
+}
+
+.about__after {
+    background: url(../../assets/gamingBackground.png);
+    background-size: 420px;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 7rem 0;
+
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 75%;
+    gap: 15%;
+    justify-content: center;
+}
+
+.about__us {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about__us-image:hover {
+    transform: rotate(0);
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about__card {
+    background-color: var(--color-card);
+    background-attachment: fixed;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgb(36, 36, 36);
+}
+
+.about__card:hover {
+    border-color: var(--color-primary);
+    transition: var(--transition);
+    cursor: default;
+    backdrop-filter: blur(15px);
+}
+
+.about__icon {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.about__card h5 {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.about__card small {
+    font-size: 0.8rem;
+    color: var(--color-light);
+}
+
+.about__content p {
+    padding: 2.6rem 0 2.6rem;
+    color: var(--color-white);
+}
+
+.about__content .small {
+    padding: 0 0 0.1rem;
+    color: var(--color-light);
+}
+
+/* ================= MEDIA QUERIES (MEDIUM SIZED DEVICES) =================== */
+@media screen and (max-width: 1250px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about__us {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+/* ================= MEDIA QUERIES (SMALL SIZED DEVICES) =================== */
+@media screen and (max-width: 600px) {
+    .about__us {
+        width: 65%;
+        margin: 0 auto 3rem;
+        gap: 1rem;
+    }
+
+    .about__after {
+        background-size: 250px;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about__content {
+        text-align: center;
+    }
+
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+
+    .about__container .btn {
+        margin: auto;
+    }
+}
